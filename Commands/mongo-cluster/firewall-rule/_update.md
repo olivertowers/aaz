@@ -4,7 +4,7 @@ Update a new firewall rule or updates an existing firewall rule on a mongo clust
 
 ## Versions
 
-### [2024-07-01](/Resources/mgmt-plane/L3N1YnNjcmlwdGlvbnMve30vcmVzb3VyY2Vncm91cHMve30vcHJvdmlkZXJzL21pY3Jvc29mdC5kb2N1bWVudGRiL21vbmdvY2x1c3RlcnMve30vZmlyZXdhbGxydWxlcy97fQ==/2024-07-01.xml) **Stable**
+### [2024-07-01](/Resources/mgmt-plane/L3N1YnNjcmlwdGlvbnMve30vcmVzb3VyY2Vncm91cHMve30vcHJvdmlkZXJzL21pY3Jvc29mdC5kb2N1bWVudGRiL21vbmdvY2x1c3RlcnMve30vZmlyZXdhbGxydWxlcy97fQ==/2024-07-01.xml) **Preview**
 
 <!-- mgmt-plane /subscriptions/{}/resourcegroups/{}/providers/microsoft.documentdb/mongoclusters/{}/firewallrules/{} 2024-07-01 -->
 
@@ -12,5 +12,5 @@ Update a new firewall rule or updates an existing firewall rule on a mongo clust
 
 - Updates a firewall rule on a Mongo Cluster resource.
     ```bash
-        mongo-cluster firewall-rule update --resource-group TestGroup --mongo-cluster-name myMongoCluster --firewall-rule-name rule1 --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
+        mongo-cluster firewall-rule update --resource-group TestGroup --mongo-cluster-name myMongoCluster --rule-name rule1 --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
     ```

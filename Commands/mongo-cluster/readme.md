@@ -4,13 +4,25 @@ Manage Mongo cluster resources.
 
 ## Subgroups
 
+- [connection-string](/Commands/mongo-cluster/connection-string/readme.md)
+: Manage connection strings on a Mongo cluster.
+
 - [firewall-rule](/Commands/mongo-cluster/firewall-rule/readme.md)
 : Manage Firewall Rule
+
+- [private-endpoint-connection](/Commands/mongo-cluster/private-endpoint-connection/readme.md)
+: Manage Private Endpoint Connection
+
+- [private-link-resource](/Commands/mongo-cluster/private-link-resource/readme.md)
+: Manage Private Link Resource
 
 - [replica](/Commands/mongo-cluster/replica/readme.md)
 : Manage Mongo cluster replicas.
 
 ## Commands
+
+- [check-name-availability](/Commands/mongo-cluster/_check-name-availability.md)
+: Check if mongo cluster name is available for use.
 
 - [create](/Commands/mongo-cluster/_create.md)
 : Create a mongo cluster. Update overwrites all properties for the resource. To only modify some of the properties, use PATCH.
