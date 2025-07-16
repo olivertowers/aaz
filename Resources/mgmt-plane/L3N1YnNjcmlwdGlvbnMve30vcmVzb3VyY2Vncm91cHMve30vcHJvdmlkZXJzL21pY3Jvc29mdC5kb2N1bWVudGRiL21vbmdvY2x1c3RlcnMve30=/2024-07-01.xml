@@ -326,8 +326,8 @@
         <arg type="string" var="$resource.properties.replicaParameters.sourceLocation" options="replica-source-location" group="ReplicaParameters">
           <help short="The location of the source cluster"/>
         </arg>
-        <arg type="string" var="$resource.properties.replicaParameters.sourceResourceId" options="replica-source-resource-id" group="ReplicaParameters">
-          <help short="The id of the replication source cluster."/>
+        <arg type="string" var="$resource.properties.replicaParameters.sourceResourceId" options="replica-source-resource" group="ReplicaParameters">
+          <help short="ARM resource ID of the primary cluster to create a replica from."/>
         </arg>
       </argGroup>
       <argGroup name="Resource">
@@ -342,11 +342,11 @@
         </arg>
       </argGroup>
       <argGroup name="RestoreParameters">
-        <arg type="dateTime" var="$resource.properties.restoreParameters.pointInTimeUTC" options="restore-time-utc" group="RestoreParameters">
-          <help short="UTC point in time to restore a mongo cluster"/>
+        <arg type="dateTime" var="$resource.properties.restoreParameters.pointInTimeUTC" options="restore-time" group="RestoreParameters">
+          <help short="ISO 8601 UTC formatted time stamp to restore a mongo cluster to eg. '2024-07-01T09:03:15Z'"/>
         </arg>
-        <arg type="string" var="$resource.properties.restoreParameters.sourceResourceId" options="restore-source-resource-id" group="RestoreParameters">
-          <help short="Resource ID to locate the source cluster to restore"/>
+        <arg type="string" var="$resource.properties.restoreParameters.sourceResourceId" options="restore-source-resource" group="RestoreParameters">
+          <help short="ARM resource ID to locate the source cluster to restore"/>
         </arg>
       </argGroup>
       <argGroup name="Sharding">
