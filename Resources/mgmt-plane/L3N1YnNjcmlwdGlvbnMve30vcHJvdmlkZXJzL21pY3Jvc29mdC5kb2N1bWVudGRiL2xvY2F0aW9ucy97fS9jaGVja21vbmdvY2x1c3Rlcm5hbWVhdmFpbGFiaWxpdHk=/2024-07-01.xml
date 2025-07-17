@@ -9,7 +9,7 @@
         <arg type="SubscriptionId" var="$Path.subscriptionId" options="subscription" required="True" idPart="subscription"/>
       </argGroup>
       <argGroup name="Body">
-        <arg type="string" var="$body.name" options="mongo-cluster-name name n" group="Body">
+        <arg type="string" var="$body.name" options="cluster-name name n" group="Body">
           <help short="The name of the resource for which availability needs to be checked."/>
         </arg>
         <arg type="string" var="$body.type" options="type" group="Body">
@@ -24,7 +24,9 @@
               <param type="string" name="location" arg="$Path.location" required="True">
                 <format minLength="1"/>
               </param>
-              <param type="uuid" name="subscriptionId" arg="$Path.subscriptionId" required="True"/>
+              <param type="uuid" name="subscriptionId" arg="$Path.subscriptionId" required="True">
+                <format minLength="1"/>
+              </param>
             </path>
             <query>
               <const readOnly="True" const="True" type="string" name="api-version" required="True">

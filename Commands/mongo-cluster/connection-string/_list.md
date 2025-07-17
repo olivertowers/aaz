@@ -12,5 +12,5 @@ List mongo cluster connection strings. This includes the default connection stri
 
 - List the available connection strings for the Mongo Cluster resource.
     ```bash
-        mongo-cluster list-connection-strings --resource-group TestGroup --mongo-cluster-name myMongoCluster
+        document-db cluster list-connection-strings --resource-group TestGroup --cluster-name myMongoCluster
     ```

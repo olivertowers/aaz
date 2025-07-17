@@ -225,7 +225,7 @@
 : Manage mobile network
 
 - [mongo-cluster](/Commands/mongo-cluster/readme.md)
-: Manage Mongo cluster resources.
+: Manage Document DB Mongo resources.
 
 - [monitor](/Commands/monitor/readme.md)
 : Manage the Azure Monitor Service.

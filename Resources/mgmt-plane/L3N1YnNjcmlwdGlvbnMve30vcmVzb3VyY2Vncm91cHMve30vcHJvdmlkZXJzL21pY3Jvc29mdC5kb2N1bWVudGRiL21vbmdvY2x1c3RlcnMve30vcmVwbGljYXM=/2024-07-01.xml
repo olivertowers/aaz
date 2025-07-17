@@ -5,16 +5,12 @@
     <command name="list" version="2024-07-01">
       <resource id="/subscriptions/{}/resourcegroups/{}/providers/microsoft.documentdb/mongoclusters/{}/replicas" version="2024-07-01" swagger="mgmt-plane/mongocluster/ResourceProviders/Microsoft.DocumentDB/Paths/L3N1YnNjcmlwdGlvbnMve3N1YnNjcmlwdGlvbklkfS9yZXNvdXJjZUdyb3Vwcy97cmVzb3VyY2VHcm91cE5hbWV9L3Byb3ZpZGVycy9NaWNyb3NvZnQuRG9jdW1lbnREQi9tb25nb0NsdXN0ZXJzL3ttb25nb0NsdXN0ZXJOYW1lfS9yZXBsaWNhcw==/V/MjAyNC0wNy0wMQ=="/>
       <argGroup name="">
-        <arg type="string" var="$Path.mongoClusterName" options="mongo-cluster-name name n" required="True" group="" idPart="name">
+        <arg type="string" var="$Path.mongoClusterName" options="cluster-name name n" required="True" group="" idPart="name">
           <help short="The name of the mongo cluster."/>
           <format pattern="^[a-z0-9]+(-[a-z0-9]+)*" maxLength="40" minLength="3"/>
         </arg>
-        <arg type="ResourceGroupName" var="$Path.resourceGroupName" options="resource-group g" required="True" group="" idPart="resource_group">
-          <help short="Name of the resource group."/>
-        </arg>
-        <arg type="SubscriptionId" var="$Path.subscriptionId" options="subscription" required="True" group="" idPart="subscription">
-          <help short="Name or ID of subscription."/>
-        </arg>
+        <arg type="ResourceGroupName" var="$Path.resourceGroupName" options="resource-group g" required="True" idPart="resource_group"/>
+        <arg type="SubscriptionId" var="$Path.subscriptionId" options="subscription" required="True" idPart="subscription"/>
       </argGroup>
       <operation operationId="Replicas_ListByParent">
         <http path="/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/mongoClusters/{mongoClusterName}/replicas">
@@ -26,7 +22,9 @@
               <param type="string" name="resourceGroupName" arg="$Path.resourceGroupName" required="True">
                 <format pattern="^[-\w\._\(\)]+$" maxLength="90" minLength="1"/>
               </param>
-              <param type="uuid" name="subscriptionId" arg="$Path.subscriptionId" required="True"/>
+              <param type="uuid" name="subscriptionId" arg="$Path.subscriptionId" required="True">
+                <format minLength="1"/>
+              </param>
             </path>
             <query>
               <const readOnly="True" const="True" type="string" name="api-version" required="True">

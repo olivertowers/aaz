@@ -1,6 +1,6 @@
 # [Group] _mongo-cluster_
 
-Manage Mongo cluster resources.
+Manage Document DB Mongo resources.
 
 ## Subgroups
 

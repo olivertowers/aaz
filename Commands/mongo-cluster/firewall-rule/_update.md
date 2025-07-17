@@ -12,5 +12,5 @@ Update a new firewall rule or updates an existing firewall rule on a mongo clust
 
 - Updates a firewall rule on a Mongo Cluster resource.
     ```bash
-        mongo-cluster firewall-rule update --resource-group TestGroup --mongo-cluster-name myMongoCluster --rule-name rule1 --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
+        document-db cluster firewall-rule update --resource-group TestGroup --mongo-cluster-name myMongoCluster --rule-name rule1 --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
     ```

@@ -12,5 +12,5 @@ Promotes a replica mongo cluster to a primary role.
 
 - Promotes a replica Mongo Cluster resource to a primary role.
     ```bash
-        mongo-cluster replica promote --resource-group TestGroup --mongo-cluster-name replicaMongoCluster --promote-option Forced --promote-mode Switchover
+        document-db cluster replica promote --resource-group TestGroup --cluster-name myMongoCluster --promote-option Forced --promote-mode Switchover
     ```

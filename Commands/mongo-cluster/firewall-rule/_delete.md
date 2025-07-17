@@ -12,5 +12,5 @@ Delete a mongo cluster firewall rule.
 
 - Deletes a firewall rule on a Mongo Cluster resource.
     ```bash
-        mongo-cluster firewall-rule delete --resource-group TestGroup --mongo-cluster-name myMongoCluster --rule-name rule1
+        document-db cluster firewall-rule delete --resource-group TestGroup --cluster-name myMongoCluster --rule-name rule1
     ```

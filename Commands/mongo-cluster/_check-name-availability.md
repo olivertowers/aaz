@@ -12,5 +12,5 @@ Check if mongo cluster name is available for use.
 
 - Checks and confirms the Mongo Cluster name is availability for use.
     ```bash
-        mongo-cluster check-name-availability --location westus2 --name newmongocluster
+        document-db cluster check-name-availability --location westus2 --name newmongocluster
     ```

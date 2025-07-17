@@ -12,10 +12,10 @@ Update a mongo cluster resource.
 
 - Updates the disk size on a Mongo Cluster resource.
     ```bash
-        mongo-cluster update --storage-size-gb 256
+        document-db cluster update --storage-size-gb 256
     ```
 
 - Disables public network access on a Mongo Cluster resource with a private endpoint connection.
     ```bash
-        mongo-cluster update --public-network-access Disabled
+        document-db cluster update --public-network-access Disabled
     ```

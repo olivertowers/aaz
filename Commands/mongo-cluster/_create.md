@@ -12,5 +12,5 @@ Create a mongo cluster. Update overwrites all properties for the resource. To on
 
 - Creates a new Mongo Cluster resource.
     ```bash
-        mongo-cluster create --resource-group TestResourceGroup --mongo-cluster-name myMongoCluster --location westus2 --administrator-name mongoAdmin --administrator-password password --server-version 5.0 --storage-size-gb 128 --compute-tier M30 --shard-count 1 --high-availability-mode ZoneRedundantPreferred
+        document-db cluster create --resource-group TestResourceGroup --cluster-name myMongoCluster --location westus2 --administrator-name mongoAdmin --administrator-password password --server-version 5.0 --storage-size-gb 128 --compute-tier M30 --shard-count 1 --high-availability-mode ZoneRedundantPreferred
     ```

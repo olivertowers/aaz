@@ -12,5 +12,5 @@ Get information about a mongo cluster firewall rule.
 
 - Gets a firewall rule on a Mongo Cluster resource.
     ```bash
-        mongo-cluster firewall-rule show --resource-group TestGroup --mongo-cluster-name myMongoCluster --rule-name rule1
+        document-db cluster firewall-rule show --resource-group TestGroup --cluster-name myMongoCluster --rule-name rule1
     ```

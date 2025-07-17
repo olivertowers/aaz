@@ -12,5 +12,5 @@ Get information about a mongo cluster.
 
 - Gets a Mongo Cluster resource.
     ```bash
-        mongo-cluster show --resource-group TestResourceGroup --mongo-cluster-name myMongoCluster
+        document-db cluster show --resource-group TestResourceGroup --cluster-name myMongoCluster
     ```

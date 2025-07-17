@@ -12,5 +12,5 @@ Create a new firewall rule or updates an existing firewall rule on a mongo clust
 
 - Creates a firewall rule on a Mongo Cluster resource.
     ```bash
-        mongo-cluster firewall-rule create --resource-group TestGroup --mongo-cluster-name myMongoCluster --rule-name rule1 --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
+        document-db cluster firewall-rule create --resource-group TestGroup --cluster-name myMongoCluster --rule-name rule1 --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
     ```

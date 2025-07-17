@@ -12,5 +12,5 @@ List all the firewall rules in a given mongo cluster.
 
 - List the firewall rules on a Mongo Cluster resource.
     ```bash
-        mongo-cluster firewall-rule list --resource-group TestGroup --mongo-cluster-name myMongoCluster
+        document-db cluster firewall-rule list --resource-group TestGroup --cluster-name myMongoCluster
     ```

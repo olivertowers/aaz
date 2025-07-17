@@ -12,5 +12,5 @@ Delete a mongo cluster.
 
 - Deletes a Mongo Cluster resource.
     ```bash
-        mongo-cluster delete --resource-group TestResourceGroup --mongo-cluster-name myMongoCluster
+        document-db cluster delete --resource-group TestResourceGroup --cluster-name myMongoCluster
     ```

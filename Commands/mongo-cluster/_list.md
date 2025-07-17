@@ -11,12 +11,12 @@ List all the mongo clusters in a given resource group.
 
 #### examples
 
-- Lists the Mongo Cluster resources in a resource group.
-    ```bash
-        mongo-cluster list --resource-group TestResourceGroup
-    ```
-
 - Lists the Mongo Cluster resources in a subscription.
     ```bash
-        mongo-cluster list
+        document-db cluster list
+    ```
+
+- Lists the Mongo Cluster resources in a resource group.
+    ```bash
+        document-db cluster list --resource-group TestResourceGroup
     ```
