@@ -143,6 +143,9 @@
 - [dns-resolver](/Commands/dns-resolver/readme.md)
 : Manage Dns Resolver
 
+- [document-db](/Commands/document-db/readme.md)
+: Manage Document DB Mongo resources
+
 - [durabletask](/Commands/durabletask/readme.md)
 : Commands to manage Durabletask schedulers and taskhubs
 

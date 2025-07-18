@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <CodeGen plane="mgmt-plane">
   <resource id="/subscriptions/{}/resourcegroups/{}/providers/microsoft.documentdb/mongoclusters/{}" version="2024-07-01" swagger="mgmt-plane/mongocluster/ResourceProviders/Microsoft.DocumentDB/Paths/L3N1YnNjcmlwdGlvbnMve3N1YnNjcmlwdGlvbklkfS9yZXNvdXJjZUdyb3Vwcy97cmVzb3VyY2VHcm91cE5hbWV9L3Byb3ZpZGVycy9NaWNyb3NvZnQuRG9jdW1lbnREQi9tb25nb0NsdXN0ZXJzL3ttb25nb0NsdXN0ZXJOYW1lfQ==/V/MjAyNC0wNy0wMQ=="/>
-  <commandGroup name="mongo-cluster">
+  <commandGroup name="document-db cluster">
     <command name="show" version="2024-07-01" confirmation="">
       <resource id="/subscriptions/{}/resourcegroups/{}/providers/microsoft.documentdb/mongoclusters/{}" version="2024-07-01" swagger="mgmt-plane/mongocluster/ResourceProviders/Microsoft.DocumentDB/Paths/L3N1YnNjcmlwdGlvbnMve3N1YnNjcmlwdGlvbklkfS9yZXNvdXJjZUdyb3Vwcy97cmVzb3VyY2VHcm91cE5hbWV9L3Byb3ZpZGVycy9NaWNyb3NvZnQuRG9jdW1lbnREQi9tb25nb0NsdXN0ZXJzL3ttb25nb0NsdXN0ZXJOYW1lfQ==/V/MjAyNC0wNy0wMQ=="/>
       <argGroup name="">
@@ -287,7 +287,6 @@
       <argGroup name="Properties">
         <arg type="string" var="$resource.properties.createMode" options="create-mode" group="Properties">
           <help short="The mode to create a mongo cluster."/>
-          <default value="&quot;Default&quot;"/>
           <enum>
             <item name="Default" value="&quot;Default&quot;"/>
             <item name="GeoReplica" value="&quot;GeoReplica&quot;"/>
@@ -296,7 +295,7 @@
           </enum>
         </arg>
         <arg type="array<string>" var="$resource.properties.previewFeatures" options="preview-features" group="Properties">
-          <help short="The preview features to apply to the cluster."/>
+          <help short="List of private endpoint connections."/>
           <item type="string">
             <enum>
               <item name="GeoReplicas" value="&quot;GeoReplicas&quot;"/>
@@ -335,10 +334,10 @@
       </argGroup>
       <argGroup name="RestoreParameters">
         <arg type="dateTime" var="$resource.properties.restoreParameters.pointInTimeUTC" options="restore-time" group="RestoreParameters">
-          <help short="ISO 8601 UTC formatted time stamp to restore a mongo cluster to eg. '2024-07-01T09:03:15Z'"/>
+          <help short="ISO 8601 UTC formatted time stamp to restore a mongo cluster to eg. '2024-07-01T09:03:15Z'."/>
         </arg>
         <arg type="string" var="$resource.properties.restoreParameters.sourceResourceId" options="restore-source-resource" group="RestoreParameters">
-          <help short="ARM resource ID to locate the source cluster to restore"/>
+          <help short="ARM resource ID to locate the source cluster to restore."/>
         </arg>
       </argGroup>
       <argGroup name="Sharding">
@@ -347,8 +346,8 @@
         </arg>
       </argGroup>
       <argGroup name="Storage">
-        <arg type="integer64" var="$resource.properties.storage.sizeGb" options="storage-size-gb" group="Storage">
-          <help short="The size of the data disk assigned to each server."/>
+        <arg type="integer64" var="$resource.properties.storage.sizeGb" options="storage-size" group="Storage">
+          <help short="The size of the data disk assigned to each server in Gigabytes (Gb)."/>
         </arg>
       </argGroup>
       <operation operationId="MongoClusters_CreateOrUpdate">
@@ -642,7 +641,7 @@
       </argGroup>
       <argGroup name="Properties">
         <arg nullable="True" type="array<string>" var="$resource.properties.previewFeatures" options="preview-features" group="Properties">
-          <help short="The preview features to apply to the cluster."/>
+          <help short="List of private endpoint connections."/>
           <item nullable="True" type="string">
             <enum>
               <item name="GeoReplicas" value="&quot;GeoReplicas&quot;"/>
@@ -674,8 +673,8 @@
         </arg>
       </argGroup>
       <argGroup name="Storage">
-        <arg nullable="True" type="integer64" var="$resource.properties.storage.sizeGb" options="storage-size-gb" group="Storage">
-          <help short="The size of the data disk assigned to each server."/>
+        <arg nullable="True" type="integer64" var="$resource.properties.storage.sizeGb" options="storage-size" group="Storage">
+          <help short="The size of the data disk assigned to each server in Gigabytes (Gb)."/>
         </arg>
       </argGroup>
       <operation operationId="MongoClusters_Get">
