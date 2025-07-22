@@ -295,7 +295,7 @@
           </enum>
         </arg>
         <arg type="array<string>" var="$resource.properties.previewFeatures" options="preview-features" group="Properties">
-          <help short="List of private endpoint connections."/>
+          <help short="Preview features to enable on the cluster. Provided list will replace all existing preview features on a cluster."/>
           <item type="string">
             <enum>
               <item name="GeoReplicas" value="&quot;GeoReplicas&quot;"/>
@@ -641,7 +641,7 @@
       </argGroup>
       <argGroup name="Properties">
         <arg nullable="True" type="array<string>" var="$resource.properties.previewFeatures" options="preview-features" group="Properties">
-          <help short="List of private endpoint connections."/>
+          <help short="Preview features to enable on the cluster. Provided list will replace all existing preview features on a cluster."/>
           <item nullable="True" type="string">
             <enum>
               <item name="GeoReplicas" value="&quot;GeoReplicas&quot;"/>
