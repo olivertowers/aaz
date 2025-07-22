@@ -1,11 +1,11 @@
-# [Group] _document-db cluster replica_
+# [Group] _docdb cluster replica_
 
-Manages replicas on a mongo cluster.
+Manages Document DB cluster replicas.
 
 ## Commands
 
-- [list](/Commands/document-db/cluster/replica/_list.md)
-: List all the replicas of a mongo cluster.
+- [list](/Commands/docdb/cluster/replica/_list.md)
+: List all the replicas of a Document DB cluster.
 
-- [promote](/Commands/document-db/cluster/replica/_promote.md)
-: Promotes a replica mongo cluster to be primary.
+- [promote](/Commands/docdb/cluster/replica/_promote.md)
+: Promotes a replica Document DB cluster to be primary.

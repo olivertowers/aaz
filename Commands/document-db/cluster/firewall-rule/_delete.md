@@ -1,6 +1,6 @@
-# [Command] _document-db cluster firewall-rule delete_
+# [Command] _docdb cluster firewall-rule delete_
 
-Delete a mongo cluster firewall rule.
+Delete a Document DB cluster firewall rule.
 
 ## Versions
 
@@ -10,7 +10,7 @@ Delete a mongo cluster firewall rule.
 
 #### examples
 
-- Deletes a firewall rule on a Mongo Cluster resource.
+- Deletes a firewall rule on a cluster resource.
     ```bash
-        document-db cluster firewall-rule delete --resource-group TestGroup --cluster-name myMongoCluster --rule-name rule1
+        docdb cluster firewall-rule delete --resource-group TestGroup --cluster-name myCluster --rule-name rule1
     ```

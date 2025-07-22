@@ -1,6 +1,6 @@
-# [Command] _document-db cluster create_
+# [Command] _docdb cluster create_
 
-Create a mongo cluster.
+Create a Document DB cluster.
 
 ## Versions
 
@@ -10,7 +10,7 @@ Create a mongo cluster.
 
 #### examples
 
-- Creates a new Mongo Cluster resource.
+- Creates a new cluster resource.
     ```bash
-        document-db cluster create --resource-group TestResourceGroup --cluster-name myMongoCluster --location westus2 --administrator-name mongoAdmin --administrator-password password --server-version 5.0 --storage-size 128 --compute-tier M30 --shard-count 1 --high-availability-mode ZoneRedundantPreferred
+        docdb cluster create --resource-group TestResourceGroup --cluster-name myCluster --location westus2 --administrator-name myAdmin --administrator-password password --server-version 5.0 --storage-size 128 --compute-tier M30 --shard-count 1 --high-availability-mode ZoneRedundantPreferred
     ```

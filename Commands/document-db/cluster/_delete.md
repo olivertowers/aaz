@@ -1,6 +1,6 @@
-# [Command] _document-db cluster delete_
+# [Command] _docdb cluster delete_
 
-Delete a mongo cluster.
+Delete a Document DB cluster.
 
 ## Versions
 
@@ -10,7 +10,7 @@ Delete a mongo cluster.
 
 #### examples
 
-- Deletes a Mongo Cluster resource.
+- Deletes a cluster resource.
     ```bash
-        document-db cluster delete --resource-group TestResourceGroup --cluster-name myMongoCluster
+        docdb cluster delete --resource-group TestResourceGroup --cluster-name myCluster
     ```

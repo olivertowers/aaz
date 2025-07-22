@@ -1,6 +1,6 @@
-# [Command] _document-db cluster firewall-rule show_
+# [Command] _docdb cluster firewall-rule show_
 
-Get information about a mongo cluster firewall rule.
+Get information about a Document DB cluster firewall rule.
 
 ## Versions
 
@@ -10,7 +10,7 @@ Get information about a mongo cluster firewall rule.
 
 #### examples
 
-- Gets a firewall rule on a Mongo Cluster resource.
+- Gets a firewall rule on a cluster resource.
     ```bash
-        document-db cluster firewall-rule show --resource-group TestGroup --cluster-name myMongoCluster --rule-name rule1
+        docdb cluster firewall-rule show --resource-group TestGroup --cluster-name myCluster --rule-name rule1
     ```

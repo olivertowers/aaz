@@ -1,34 +1,34 @@
-# [Group] _document-db cluster_
+# [Group] _docdb cluster_
 
-Manage Mongo cluster resources.
+Manage Document DB cluster resources.
 
 ## Subgroups
 
-- [firewall-rule](/Commands/document-db/cluster/firewall-rule/readme.md)
-: Manage Firewall Rule on a Document DB mongo cluster.
+- [firewall-rule](/Commands/docdb/cluster/firewall-rule/readme.md)
+: Manage Firewall Rule on a Document DB cluster.
 
-- [replica](/Commands/document-db/cluster/replica/readme.md)
-: Manages replicas on a mongo cluster.
+- [replica](/Commands/docdb/cluster/replica/readme.md)
+: Manages Document DB cluster replicas.
 
 ## Commands
 
-- [check-name-availability](/Commands/document-db/cluster/_check-name-availability.md)
-: Check if mongo cluster name is available for use.
+- [check-name-availability](/Commands/docdb/cluster/_check-name-availability.md)
+: Check if a Document DB cluster name is available for use.
 
-- [create](/Commands/document-db/cluster/_create.md)
-: Create a mongo cluster.
+- [create](/Commands/docdb/cluster/_create.md)
+: Create a Document DB cluster.
 
-- [delete](/Commands/document-db/cluster/_delete.md)
-: Delete a mongo cluster.
+- [delete](/Commands/docdb/cluster/_delete.md)
+: Delete a Document DB cluster.
 
-- [list](/Commands/document-db/cluster/_list.md)
-: List all the mongo clusters in a given subscription.
+- [list](/Commands/docdb/cluster/_list.md)
+: List all the Document DB clusters in a given subscription.
 
-- [list-connection-strings](/Commands/document-db/cluster/_list-connection-strings.md)
-: List mongo cluster connection strings. This includes the default connection string using SCRAM-SHA-256, as well as other connection strings supported by the cluster.
+- [list-connection-strings](/Commands/docdb/cluster/_list-connection-strings.md)
+: List Document DB cluster connection strings. This includes the default connection string using SCRAM-SHA-256, as well as other connection strings supported by the cluster.
 
-- [show](/Commands/document-db/cluster/_show.md)
-: Get information about a mongo cluster.
+- [show](/Commands/docdb/cluster/_show.md)
+: Get information about a Document DB cluster.
 
-- [update](/Commands/document-db/cluster/_update.md)
-: Update a mongo cluster.
+- [update](/Commands/docdb/cluster/_update.md)
+: Update a Document DB cluster.

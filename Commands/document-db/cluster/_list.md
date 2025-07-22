@@ -1,6 +1,6 @@
-# [Command] _document-db cluster list_
+# [Command] _docdb cluster list_
 
-List all the mongo clusters in a given subscription.
+List all the Document DB clusters in a given subscription.
 
 ## Versions
 
@@ -11,12 +11,12 @@ List all the mongo clusters in a given subscription.
 
 #### examples
 
-- Lists the Mongo Cluster resources in a subscription.
+- Lists the cluster resources in a subscription.
     ```bash
-        document-db cluster list
+        docdb cluster list
     ```
 
-- Lists the Mongo Cluster resources in a resource group.
+- Lists the cluster resources in a resource group.
     ```bash
-        document-db cluster list --resource-group TestResourceGroup
+        docdb cluster list --resource-group TestResourceGroup
     ```

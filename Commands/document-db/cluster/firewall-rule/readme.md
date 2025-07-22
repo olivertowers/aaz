@@ -1,20 +1,20 @@
-# [Group] _document-db cluster firewall-rule_
+# [Group] _docdb cluster firewall-rule_
 
-Manage Firewall Rule on a Document DB mongo cluster.
+Manage Firewall Rule on a Document DB cluster.
 
 ## Commands
 
-- [create](/Commands/document-db/cluster/firewall-rule/_create.md)
-: Create a new firewall rule or updates an existing firewall rule on a mongo cluster.
+- [create](/Commands/docdb/cluster/firewall-rule/_create.md)
+: Create a new firewall rule or updates an existing firewall rule on a Document DB cluster.
 
-- [delete](/Commands/document-db/cluster/firewall-rule/_delete.md)
-: Delete a mongo cluster firewall rule.
+- [delete](/Commands/docdb/cluster/firewall-rule/_delete.md)
+: Delete a Document DB cluster firewall rule.
 
-- [list](/Commands/document-db/cluster/firewall-rule/_list.md)
-: List all the firewall rules in a given mongo cluster.
+- [list](/Commands/docdb/cluster/firewall-rule/_list.md)
+: List all the firewall rules in a Document DB cluster.
 
-- [show](/Commands/document-db/cluster/firewall-rule/_show.md)
-: Get information about a mongo cluster firewall rule.
+- [show](/Commands/docdb/cluster/firewall-rule/_show.md)
+: Get information about a Document DB cluster firewall rule.
 
-- [update](/Commands/document-db/cluster/firewall-rule/_update.md)
-: Update a new firewall rule or updates an existing firewall rule on a mongo cluster.
+- [update](/Commands/docdb/cluster/firewall-rule/_update.md)
+: Update a new firewall rule or updates an existing firewall rule on a Document DB cluster.

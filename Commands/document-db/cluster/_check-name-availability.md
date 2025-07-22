@@ -1,6 +1,6 @@
-# [Command] _document-db cluster check-name-availability_
+# [Command] _docdb cluster check-name-availability_
 
-Check if mongo cluster name is available for use.
+Check if a Document DB cluster name is available for use.
 
 ## Versions
 
@@ -10,7 +10,7 @@ Check if mongo cluster name is available for use.
 
 #### examples
 
-- Checks and confirms the Mongo Cluster name is availability for use.
+- Checks and confirms the cluster name is availability for use.
     ```bash
-        document-db cluster check-name-availability --location westus2 --name newmongocluster
+        docdb cluster check-name-availability --location westus2 --name newClusterName
     ```

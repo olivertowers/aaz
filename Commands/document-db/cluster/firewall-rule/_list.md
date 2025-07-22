@@ -1,6 +1,6 @@
-# [Command] _document-db cluster firewall-rule list_
+# [Command] _docdb cluster firewall-rule list_
 
-List all the firewall rules in a given mongo cluster.
+List all the firewall rules in a Document DB cluster.
 
 ## Versions
 
@@ -10,7 +10,7 @@ List all the firewall rules in a given mongo cluster.
 
 #### examples
 
-- List the firewall rules on a Mongo Cluster resource.
+- List the firewall rules on a cluster resource.
     ```bash
-        document-db cluster firewall-rule list --resource-group TestGroup --cluster-name myMongoCluster
+        docdb cluster firewall-rule list --resource-group TestGroup --cluster-name myCluster
     ```

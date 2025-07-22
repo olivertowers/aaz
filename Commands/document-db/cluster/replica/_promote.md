@@ -1,6 +1,6 @@
-# [Command] _document-db cluster replica promote_
+# [Command] _docdb cluster replica promote_
 
-Promotes a replica mongo cluster to be primary.
+Promotes a replica Document DB cluster to be primary.
 
 ## Versions
 
@@ -10,7 +10,7 @@ Promotes a replica mongo cluster to be primary.
 
 #### examples
 
-- Promotes a replica Mongo Cluster resource to a primary role.
+- Promotes a replica cluster resource to a primary role.
     ```bash
-        document-db cluster replica promote --resource-group TestGroup --cluster-name myMongoCluster --promote-option Forced --promote-mode Switchover
+        docdb cluster replica promote --resource-group TestGroup --cluster-name myCluster --promote-option Forced --promote-mode Switchover
     ```

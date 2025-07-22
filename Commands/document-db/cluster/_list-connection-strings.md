@@ -1,6 +1,6 @@
-# [Command] _document-db cluster list-connection-strings_
+# [Command] _docdb cluster list-connection-strings_
 
-List mongo cluster connection strings. This includes the default connection string using SCRAM-SHA-256, as well as other connection strings supported by the cluster.
+List Document DB cluster connection strings. This includes the default connection string using SCRAM-SHA-256, as well as other connection strings supported by the cluster.
 
 ## Versions
 
@@ -10,7 +10,7 @@ List mongo cluster connection strings. This includes the default connection stri
 
 #### examples
 
-- List the available connection strings for the Mongo Cluster resource.
+- List the available connection strings for the cluster resource.
     ```bash
-        document-db cluster list-connection-strings --resource-group TestGroup --cluster-name myMongoCluster
+        docdb cluster list-connection-strings --resource-group TestGroup --cluster-name myCluster
     ```

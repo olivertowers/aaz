@@ -1,6 +1,6 @@
-# [Command] _document-db cluster show_
+# [Command] _docdb cluster show_
 
-Get information about a mongo cluster.
+Get information about a Document DB cluster.
 
 ## Versions
 
@@ -10,7 +10,7 @@ Get information about a mongo cluster.
 
 #### examples
 
-- Gets a Mongo Cluster resource.
+- Gets a cluster resource.
     ```bash
-        document-db cluster show --resource-group TestResourceGroup --cluster-name myMongoCluster
+        docdb cluster show --resource-group TestResourceGroup --cluster-name myCluster
     ```

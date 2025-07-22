@@ -1,6 +1,6 @@
-# [Command] _document-db cluster firewall-rule create_
+# [Command] _docdb cluster firewall-rule create_
 
-Create a new firewall rule or updates an existing firewall rule on a mongo cluster.
+Create a new firewall rule or updates an existing firewall rule on a Document DB cluster.
 
 ## Versions
 
@@ -10,7 +10,7 @@ Create a new firewall rule or updates an existing firewall rule on a mongo clust
 
 #### examples
 
-- Creates a firewall rule on a Mongo Cluster resource.
+- Creates a firewall rule on a cluster resource.
     ```bash
-        document-db cluster firewall-rule create --resource-group TestGroup --cluster-name myMongoCluster --rule-name rule1 --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
+        docdb cluster firewall-rule create --resource-group TestGroup --cluster-name myCluster --rule-name rule1 --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
     ```

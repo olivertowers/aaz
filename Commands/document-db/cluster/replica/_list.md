@@ -1,6 +1,6 @@
-# [Command] _document-db cluster replica list_
+# [Command] _docdb cluster replica list_
 
-List all the replicas of a mongo cluster.
+List all the replicas of a Document DB cluster.
 
 ## Versions
 
@@ -10,7 +10,7 @@ List all the replicas of a mongo cluster.
 
 #### examples
 
-- List the replicas linked to a Mongo Cluster resource.
+- List the replicas linked to a cluster resource.
     ```bash
-        document-db cluster replica list --resource-group TestGroup --cluster-name myMongoCluster
+        docdb cluster replica list --resource-group TestGroup --cluster-name myCluster
     ```

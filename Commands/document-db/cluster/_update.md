@@ -1,6 +1,6 @@
-# [Command] _document-db cluster update_
+# [Command] _docdb cluster update_
 
-Update a mongo cluster.
+Update a Document DB cluster.
 
 ## Versions
 
@@ -10,12 +10,12 @@ Update a mongo cluster.
 
 #### examples
 
-- Updates the disk size on a Mongo Cluster resource.
+- Updates the disk size on a cluster resource.
     ```bash
-        document-db cluster update --storage-size-gb 256
+        docdb cluster update --storage-size-gb 256
     ```
 
-- Disables public network access on a Mongo Cluster resource with a private endpoint connection.
+- Disables public network access on a cluster resource with a private endpoint connection.
     ```bash
-        mongo-cluster cluster update --public-network-access Disabled
+        docdb cluster update --public-network-access Disabled
     ```
